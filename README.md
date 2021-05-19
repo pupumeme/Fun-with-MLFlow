@@ -1,6 +1,7 @@
 # Fun-with-MLFlow
 
 安裝docker: https://blog.gtwang.org/virtualization/ubuntu-linux-install-docker-tutorial/   
+撰寫Dockerfile: https://ithelp.ithome.com.tw/articles/10191016   
 安裝mlflow: pip install mlflow  
 開port: sudo docker run -p 5050:8888  
 docker build -t mlflow-docker . --no-cache
