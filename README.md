@@ -35,3 +35,9 @@ sudo apt-get update -y
 sudo apt-get install docker.io -y 
 sudo docker build -t mlflow-docker . --no-cache
 ```
+
+###進入docker
+```
+docker ps
+docker exec -it <container_id> bash
+```
