@@ -14,9 +14,7 @@ sudo apt-get install docker.io
 ```
 FROM jupyter/datascience-notebook
 USER root
-RUN apt-get update -y \
-&&  apt-get install docker.io -y \
-&&  apt-get install python3-pip -y \
+RUN apt-get install python3-pip -y \
 &&  pip3 install mlflow
 ```
 
@@ -24,5 +22,15 @@ RUN apt-get update -y \
 ### 執行Dockerfile
 ```
 sudo docker build -t mlflow-docker . --no-cache  
+sudo docker run -p 5050:8888 mlflow-docker
+```
+
+### run.sh
+```
+git clone https://github.com/pupumeme/Fun-with-MLFlow.git
+cd Fun-with-MLFlow/
+sudo apt-get update -y 
+sudo apt-get install docker.io -y 
+sudo docker build -t mlflow-docker . --no-cache
 sudo docker run -p 5050:8888 mlflow-docker
 ```
