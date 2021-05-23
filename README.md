@@ -16,9 +16,27 @@ chmod 777 run.sh
 ./run.sh
 ```
 
+3. 開啟mlflow伺服器
+```
 mlflow server --backend-store-uri sqlite:///mlflow.db --default-artifact-root ./artifacts --host 0.0.0.0
+```
+(好像不能放進Dockerfile的樣子)
+
+記得把權限都設成可寫入
+```
+chmod 777 *
+```
+
 
 使用aws真的是當到不行，docker裝完竟然就要4GB，有夠肥  
 我大概重架了快十個伺服器(ಥ_ಥ)  
 後來才發現可以調storage的大小  
 我哭了  
+
+後來storage也無法解決  
+最後把swap加大就行了  
+https://askubuntu.com/questions/1264568/increase-swap-in-20-04  
+搞了一整天(ಥ_ಥ)  
+學到了教訓  
+唯一的好處應該是我重架了十幾次  
+變得很熟練...  
