@@ -24,3 +24,13 @@ sudo docker run -p 5050:8888 -p 5000:5000 -d mlflow-docker
 sudo docker ps
 sudo docker exec -it <container_id> bash
 ```
+
+### 加分 MLflow Model Registry
+https://github.com/mlflow/mlflow/blob/master/docs/source/model-registry.rst#concepts
+```
+mlflow server --backend-store-uri sqlite:///mlflow.db --default-artifact-root ./artifacts
+```
+在code裡加
+```
+mlflow.set_tracking_uri("http://localhost:5000")
+```
