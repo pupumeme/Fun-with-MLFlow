@@ -18,7 +18,7 @@ chmod 777 run.sh
 ./run.sh
 ```
 
-3. 開啟mlflow伺服器(好像不能放進Dockerfile的樣子)
+3. 開啟mlflow伺服器(好像不能放進Dockerfile的樣子)  
 進入docker
 ```
 sudo docker ps
