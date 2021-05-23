@@ -22,7 +22,8 @@ mlflow server --backend-store-uri sqlite:///mlflow.db --default-artifact-root ./
 ```
 (好像不能放進Dockerfile的樣子)
 
-記得把權限都設成可寫入
+
+4. 記得把mlflow的檔案權限都設成可寫入
 ```
 chmod 777 *
 ```
@@ -36,7 +37,6 @@ chmod 777 *
 後來storage也無法解決  
 最後把swap加大就行了  
 https://askubuntu.com/questions/1264568/increase-swap-in-20-04  
-搞了一整天(ಥ_ಥ)  
-學到了教訓  
-唯一的好處應該是我重架了十幾次  
-變得很熟練...  
+搞了一整天，重架了十幾次(ಥ_ಥ)  
+唯一的好處應該是讓我  
+架docker和架mlflow變得很熟練...  
