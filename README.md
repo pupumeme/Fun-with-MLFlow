@@ -18,12 +18,16 @@ chmod 777 run.sh
 ./run.sh
 ```
 
-3. 開啟mlflow伺服器
+3. 開啟mlflow伺服器(好像不能放進Dockerfile的樣子)
+進入docker
+```
+sudo docker ps
+sudo docker exec -it <container_id> bash
+```
+開啟mlflow伺服器
 ```
 mlflow server --backend-store-uri sqlite:///mlflow.db --default-artifact-root ./artifacts --host 0.0.0.0
 ```
-(好像不能放進Dockerfile的樣子)
-
 
 4. 記得把mlflow的檔案權限都設成可寫入
 ```
