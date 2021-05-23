@@ -35,7 +35,7 @@ chmod 777 *
 我哭了  
 
 後來storage也無法解決  
-最後把swap加大就行了  
+最後發現把swap加大就行了  
 https://askubuntu.com/questions/1264568/increase-swap-in-20-04  
 搞了一整天，重架了十幾次(ಥ_ಥ)  
 唯一的好處應該是讓我  
