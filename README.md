@@ -16,6 +16,8 @@ chmod 777 run.sh
 ./run.sh
 ```
 
+mlflow server --backend-store-uri sqlite:///mlflow.db --default-artifact-root ./artifacts --host 0.0.0.0
+
 使用aws真的是當到不行，docker裝完竟然就要4GB，有夠肥  
 我大概重架了快十個伺服器(ಥ_ಥ)  
 後來才發現可以調storage的大小  
