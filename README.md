@@ -1,4 +1,6 @@
 # Fun-with-MLFlow
+### MLFlow伺服器: http://13.209.88.233:5000/#/
+### jupyter伺服器 http://13.209.88.233:5050/?token=12c5f05f4e1208eee954c81ecdf75130f0151a1951861978
 
 1. 把run.sh下載到伺服器
 ```
