@@ -44,6 +44,4 @@ chmod 777 *
 最後發現把swap加大就行了  
 https://askubuntu.com/questions/1264568/increase-swap-in-20-04  
 搞了一整天，重架了十幾次(ಥ_ಥ)  
-問題竟是出在這裡  
-唯一的好處應該是讓我  
-架docker和架mlflow變得很熟練...  
+問題竟是出在這裡...  
