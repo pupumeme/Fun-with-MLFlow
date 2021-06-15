@@ -34,6 +34,11 @@ mlflow server --backend-store-uri sqlite:///mlflow.db --default-artifact-root ./
 chmod 777 *
 ```
 
+### MLflow主控台
+![MLflow主控台](https://github.com/pupumeme/Fun-with-MLFlow/blob/main/MLflow%E4%B8%BB%E6%8E%A7%E5%8F%B0.JPG)
+
+### model registered
+![model registered](https://github.com/pupumeme/Fun-with-MLFlow/blob/main/model%20registered.JPG)
 
 使用aws真的是當到不行，docker裝完竟然就要4GB，有夠肥  
 我大概重架了快十個伺服器(ಥ_ಥ)  
